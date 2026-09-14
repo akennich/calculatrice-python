@@ -21,8 +21,11 @@ elif choix == "3":
     print("Résultat :", resultat)
 
 elif choix == "4":
-    resultat = nombre1 / nombre2
-    print("Résultat :", resultat)
+    if nombre2 == 0:
+        print("Impossible de diviser par zéro !")
+    else:
+        resultat = nombre1 / nombre2
+        print("Résultat :", resultat)
 
 else:
     print("Choix invalide")
